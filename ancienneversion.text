@@ -1,0 +1,35 @@
+<body>
+      <div id="ex1"></div>
+      <div class="container">
+        <div class="card-white" id="introduction">
+           <h1 class = "title"> That's me, Laura Martin Person  </h1>
+            <img src="images/laura.jpg" class ="profile-image" alt="Laura Person">
+              <p>
+              I am a programmer and an anthropologist. I live in Rio de Janeiro. After my job at CNRS, I would like to work for myself. I love arts.
+              </p>
+              <a href="https://www.lewagon.com" target="_blank">
+             Le Wagon
+              </a>
+        </div>
+        <div class="card-white">
+        <h2 class="social-media"> Follow me on social medias: </h2>
+              <ul>
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook-f" class="reseau"></i> Facebook
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-linkedin-in" class="reseau"></i> Linkedin
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter" class="reseau"></i> Twitter
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </body>
