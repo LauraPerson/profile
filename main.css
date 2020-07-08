@@ -1,6 +1,5 @@
 
 body {
-border: 10px;
 color: #603A40;
 line-height: 40px;
 font-size: 20px;
@@ -11,6 +10,7 @@ font-size: 20px;
   border: solid 0.1em
   font-family: 'Dosis', sans-serif;
   color: #603A40;
+  background-attachment: fixed;
 }
 
 
@@ -19,6 +19,7 @@ font-size: 20px;
   height: 150px;
   width : 150px;
   background-size: cover;
+  margin: auto;
 }
 
 .header-content {
@@ -27,7 +28,7 @@ font-size: 20px;
   align-items: flex-end;
 }
 
-.test {
+.header-infos {
   text-align: center;
   justify-content: center;
 }
@@ -43,11 +44,6 @@ font-size: 20px;
   font-family: 'Dosis', sans-serif;
 }
 
-.title {
-font-family: 'Lobster', cursive;
-}
-
-
 .cards {
   display: flex;
   justify-content: space-between;
@@ -60,15 +56,16 @@ font-family: 'Lobster', cursive;
   width: 500px;
   text-align: center;
   background-color: rgb(240, 194, 184, 0.1);
-  box-shadow: rgba(240, 194, 184, 1) 0px 2px 8px 0px;
+  box-shadow: rgba(228, 214, 200, 1) 0px 2px 8px 0px;
   padding: 20px;
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
+  border-radius: 8px;
 }
 
 .title-presentation {
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-family: 'Dosis', sans-serif;
   font-style: bold;
 }
 
@@ -77,11 +74,34 @@ font-family: 'Lobster', cursive;
   text-align: center;
   width: 500px;
   background-color: rgb(240, 194, 184, 0.1);
-  box-shadow: rgba(240, 194, 184, 1) 0px 2px 8px 0px;
+  box-shadow: rgba(228, 214, 200, 1) 0px 2px 8px 0px;
   padding: 20px;
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
   line-height: 25px;
+  border-radius: 8px;
+  justify-content: center;
+}
+
+.right-card-content {
+display: flex;
+justify-content: center;
+}
+
+.left-card-info {
+  margin: 5px;
+  width: 150px;
+}
+
+.center-card-info {
+  padding: 20px;
+  width: 150px;
+}
+
+
+.right-card-info {
+  margin: 5px;
+  width: 150px;
 }
 
 .project-title {
@@ -89,8 +109,8 @@ font-family: 'Lobster', cursive;
   margin-right: 100px;
   margin-left: 100px;
   text-align: center;
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-family: 'Dosis', sans-serif;
   font-style: bold;
 }
 
@@ -99,34 +119,49 @@ font-family: 'Lobster', cursive;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  margin-right: 100px;
-  margin-left: 100px;
+  margin-right: 130px;
   text-align: left;
   border-radius: 5px;
   line-height: 25px;
 }
 
 .text-project {
-  background-color: rgba(228, 214, 200, 0.2);
+  background-color: white;
   padding-left: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .text-title {
   padding-top: 10px;
+  text-decoration: none;
+  color: #603A40;
+  font-size: 20px;
 }
 
 .text-presentation {
   font-size: 15px;
+  color: #603A40
 }
 
 .card-project {
   width: 300px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(228, 214, 200, 1) 0px 2px 8px 0px;
+  border-radius: 10px;
 }
 
+.card-project:hover {
+  width: 300px;
+  box-shadow: rgba(228, 214, 200, 1) 2px 4px 8px 2px;
+  border-radius: 10px;
+
+}
 .search4class {
   height: 200px;
   background-color: rgb(240, 194, 184, 0.2);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .sororitree {
@@ -134,6 +169,8 @@ font-family: 'Lobster', cursive;
   height: 200px;
   background-color: rgb(240, 194, 184, 0.2);
   box-shadow: rgba(0, 0, 0, 0.2)  0px 2px 8px 0px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .yours{
@@ -141,31 +178,18 @@ font-family: 'Lobster', cursive;
   height: 200px;
   background-color: rgb(240, 194, 184, 0.2);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .contact {
   text-align: center;
-  text-decoration: none;
 }
 
 ul {
-  list-style: none;
   text-align: center;
   margin: 0px;
   padding: 0px;
-}
-
-
-li {
-  list-style: none;
-  display: inline-block;
-}
-
-
-i {
-  text-decoration: none;
-   display: inline-block;
-
 }
 
 a {
@@ -191,6 +215,18 @@ a {
 .fas:hover {
   color: rgba(240, 194, 184);
 }
+
+.email {
+  margin-top: 5px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-style: bold;
+}
+
 
 
 
